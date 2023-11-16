@@ -11,6 +11,14 @@
 		A1D89D642B059A6C00C01C22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89D632B059A6C00C01C22 /* ContentView.swift */; };
 		A1D89D662B059A6E00C01C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D89D652B059A6E00C01C22 /* Assets.xcassets */; };
 		A1D89D692B059A6E00C01C22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D89D682B059A6E00C01C22 /* Preview Assets.xcassets */; };
+		A1D89D732B059AD000C01C22 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89D722B059AD000C01C22 /* OrderService.swift */; };
+		A1D89D752B059AEB00C01C22 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89D742B059AEB00C01C22 /* Order.swift */; };
+		A1D89D772B059B3A00C01C22 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89D762B059B3A00C01C22 /* Item.swift */; };
+		A1D89D792B059B7000C01C22 /* Purchaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89D782B059B7000C01C22 /* Purchaser.swift */; };
+		A1D89D7C2B059DAD00C01C22 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89D7B2B059DAD00C01C22 /* URLSession.swift */; };
+		A1D89D7E2B059EA500C01C22 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89D7D2B059EA500C01C22 /* OrderViewModel.swift */; };
+		A1D89D802B059FEC00C01C22 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89D7F2B059FEC00C01C22 /* OrderView.swift */; };
+		A1D89D832B05A5E700C01C22 /* OrderServiceExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D89D822B05A5E700C01C22 /* OrderServiceExtras.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		A1D89D632B059A6C00C01C22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1D89D652B059A6E00C01C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1D89D682B059A6E00C01C22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1D89D722B059AD000C01C22 /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
+		A1D89D742B059AEB00C01C22 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A1D89D762B059B3A00C01C22 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A1D89D782B059B7000C01C22 /* Purchaser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchaser.swift; sourceTree = "<group>"; };
+		A1D89D7B2B059DAD00C01C22 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		A1D89D7D2B059EA500C01C22 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		A1D89D7F2B059FEC00C01C22 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		A1D89D822B05A5E700C01C22 /* OrderServiceExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderServiceExtras.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,11 @@
 		A1D89D602B059A6C00C01C22 /* InterviewAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				A1D89D712B059AC400C01C22 /* View */,
+				A1D89D702B059ABC00C01C22 /* ViewModel */,
+				A1D89D6F2B059AB500C01C22 /* Model */,
+				A1D89D812B05A5A500C01C22 /* Service */,
+				A1D89D7A2B059D4900C01C22 /* Extensions */,
 				A1D89D612B059A6C00C01C22 /* InterviewAssignmentApp.swift */,
 				A1D89D632B059A6C00C01C22 /* ContentView.swift */,
 				A1D89D652B059A6E00C01C22 /* Assets.xcassets */,
@@ -65,6 +86,49 @@
 				A1D89D682B059A6E00C01C22 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1D89D6F2B059AB500C01C22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1D89D742B059AEB00C01C22 /* Order.swift */,
+				A1D89D762B059B3A00C01C22 /* Item.swift */,
+				A1D89D782B059B7000C01C22 /* Purchaser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1D89D702B059ABC00C01C22 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1D89D7D2B059EA500C01C22 /* OrderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1D89D712B059AC400C01C22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1D89D7F2B059FEC00C01C22 /* OrderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1D89D7A2B059D4900C01C22 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1D89D7B2B059DAD00C01C22 /* URLSession.swift */,
+				A1D89D822B05A5E700C01C22 /* OrderServiceExtras.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1D89D812B05A5A500C01C22 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A1D89D722B059AD000C01C22 /* OrderService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D89D772B059B3A00C01C22 /* Item.swift in Sources */,
+				A1D89D7C2B059DAD00C01C22 /* URLSession.swift in Sources */,
+				A1D89D732B059AD000C01C22 /* OrderService.swift in Sources */,
+				A1D89D832B05A5E700C01C22 /* OrderServiceExtras.swift in Sources */,
 				A1D89D642B059A6C00C01C22 /* ContentView.swift in Sources */,
+				A1D89D792B059B7000C01C22 /* Purchaser.swift in Sources */,
+				A1D89D752B059AEB00C01C22 /* Order.swift in Sources */,
+				A1D89D802B059FEC00C01C22 /* OrderView.swift in Sources */,
 				A1D89D622B059A6C00C01C22 /* InterviewAssignmentApp.swift in Sources */,
+				A1D89D7E2B059EA500C01C22 /* OrderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
